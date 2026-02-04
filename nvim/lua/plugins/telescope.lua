@@ -8,4 +8,6 @@ if ok then
   telescope.setup({})
 end
 
-vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { silent = true })
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>ff", builtin.find_files, { silent = true, desc = "Telescope find files" })
+vim.keymap.set("n", "<leader>fs", builtin.live_grep, { silent = true, desc = "Telescope live grep" })
