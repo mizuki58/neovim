@@ -10,6 +10,7 @@ local registry = require("mason-registry")
 
 local ensure = {
   "lua-language-server",
+  "stylua",
   "bash-language-server",
   "html-lsp",
   "json-lsp",

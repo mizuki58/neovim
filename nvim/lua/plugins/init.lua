@@ -1,5 +1,6 @@
 require("plugins.plenary")
 require("plugins.comment")
+require("plugins.conform")
 require("plugins.mason")
 require("plugins.cmp-nvim-lsp")
 require("plugins.cmp-buffer")
