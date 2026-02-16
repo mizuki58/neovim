@@ -35,4 +35,8 @@ vim.lsp.config("eslint", {
   capabilities = capabilities,
 })
 
-vim.lsp.enable({ "lua_ls", "bashls", "html", "jsonls", "cssls", "ts_ls", "eslint" })
+vim.lsp.config("jdtls", {
+  capabilities = capabilities,
+})
+
+vim.lsp.enable({ "lua_ls", "bashls", "html", "jsonls", "cssls", "ts_ls", "eslint", "jdtls" })
