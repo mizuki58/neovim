@@ -5,6 +5,7 @@ vim.pack.add({
 require("diffview").setup({})
 
 vim.keymap.set("n", "<leader>do", "<cmd>DiffviewOpen<CR>", { desc = "Diffview open" })
+vim.keymap.set("n", "<leader>db", "<cmd>DiffviewOpen origin/HEAD...HEAD<CR>", { desc = "Diff vs default branch" })
 vim.keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<CR>", { desc = "Diffview close" })
 vim.keymap.set("n", "<leader>dh", "<cmd>DiffviewFileHistory<CR>", { desc = "Diffview history" })
 vim.keymap.set("n", "<leader>dH", "<cmd>DiffviewFileHistory %<CR>", { desc = "History current file" })
